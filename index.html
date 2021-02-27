@@ -114,7 +114,40 @@
               <p></p>
               <p>The transfer learning technique is used to create a computational tool that recognizes the objects of the automatic laboratory of the Universidad Autónoma de Occidente in real time. The Inception-V3 is used as a pre-trained CNN.</p>
             </td>
-          </tr> 
+          </tr>
+
+         <tr onmouseout="dtl_stop()" onmouseover="dtl_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='dtl_image'>
+                  <img src='images/detection_ccra_after.png' width="160"></div>
+                <img src='images/detection_ccra_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function dtl_start() {
+                  document.getElementById('dtl_image').style.opacity = "1";
+                }
+
+                function dtl_stop() {
+                  document.getElementById('dtl_image').style.opacity = "0";
+                }
+                dtl_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://link.springer.com/chapter/10.1007/978-3-030-03023-0_2">
+                <papertitle>Springer - Application of Transfer Learning for Object Recognition Using Convolutional Neural Networks (Extended version)</papertitle>
+              </a>
+              <br>
+              <strong>Gustavo A. Salazar-Gomez</strong>,
+              <a href="https://www.linkedin.com/in/nicolas-diaz-salazar-792260137/">Nicolas Diaz</a>,
+              <a href="https://scholar.google.com/citations?user=7PIjh_MAAAAJ&hl=en">Jesus Alfonso Lopez</a>
+              <br>
+              <a>description</a> 
+              <p></p>
+              <p>The Inception-V3 is used as a feature extractor on the images and on the other hand a softmax classifier is trained, this contains the classes that are going to be recognized. It was used Tensorflow platform with GPU in Python.</p>
+            </td>
+          </tr>  
 <!--
           <tr onmouseout="dals_stop()" onmouseover="dals_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
