@@ -235,7 +235,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>3D object detection of vehicles in the NuScenes dataset using classic Machine learning such as DBSCAN and SVMs.</p>
               </td>
             </tr>  
-		  
+
+	    <tr onmouseout="lbp_stop()" onmouseover="lbp_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='lbp_image'>
+                    <img src='images/lbp.gif' width="160"></div>
+                  <img src='images/lbp.gif' width="160">
+                </div>
+                <script type="text/javascript">
+                  function lbp_start() {
+                    document.getElementById('lbp_image').style.opacity = "1";
+                  }
+  
+                  function lbp_stop() {
+                    document.getElementById('lbp_image').style.opacity = "0";
+                  }
+                  lbp_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/gsg213/Face-Recognition-using-LBP">
+                  <papertitle>Face recognition using LBP</papertitle>
+                </a>
+                <br>
+                <strong>Gustavo Salazar</strong>,
+                <a href="https://www.linkedin.com/in/nicolas-diaz-salazar-792260137/">Nicolas Diaz</a>
+                <br>
+                <a href="https://github.com/gsg213/Face-Recognition-using-LBP">code</a> 
+                <p></p>
+                <p>Face recognition using LBP features, the system extract the LBP features from the face in the image and a SVM is trained in order to classify each face. There could be multiple faces in the scene.</p>
+              </td>
+            </tr>
 		  
             <tr onmouseout="sdk_stop()" onmouseover="sdk_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
