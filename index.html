@@ -234,7 +234,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p></p>
                 <p>3D object detection of vehicles in the NuScenes dataset using classic Machine learning such as DBSCAN and SVMs.</p>
               </td>
-            </tr>  
+            </tr>
+
+            <tr onmouseout="mln_stop()" onmouseover="mln_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='mln_image'>
+                    <img src='images/ML.gif' width="160"></div>
+                  <img src='images/fe.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function mln_start() {
+                    document.getElementById('mln_image').style.opacity = "1";
+                  }
+  
+                  function mln_stop() {
+                    document.getElementById('mln_image').style.opacity = "0";
+                  }
+                  mln_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/gsg213/Machine_Learning">
+                  <papertitle>Classical Machine Learning</papertitle>
+                </a>
+                <br>
+                <strong>Gustavo Salazar</strong>                
+                <br>
+                <a href="https://github.com/gsg213/Machine_Learning">code</a>
+                <p></p>
+                <p>Machine learning projects from Supervised methods like KNN, Decission Trees and ANN, and Unsupervised methods like DBSCAN and PCA, finally feature engineering to improve models performance.</p>
+              </td>
+            </tr>   
 
 	    <tr onmouseout="lbp_stop()" onmouseover="lbp_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
