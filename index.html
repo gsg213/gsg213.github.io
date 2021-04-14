@@ -266,6 +266,37 @@
                               <p>3D object detection of vehicles in the NuScenes dataset using classic Machine learning such as DBSCAN and SVMs.</p>
                            </td>
                         </tr>
+                        <tr onmouseout="cnn_stop()" onmouseover="cnn_start()">
+                           <td style="padding:20px;width:25%;vertical-align:middle">
+                              <div class="one">
+                                 <div class="two" id='cnn_image'>
+                                    <img src='images/cnn.gif' width="160">
+                                 </div>
+                                 <img src='images/lenet.png' width="160">
+                              </div>
+                              <script type="text/javascript">
+                                 function cnn_start() {
+                                   document.getElementById('cnn_image').style.opacity = "1";
+                                 }
+                                 
+                                 function cnn_stop() {
+                                   document.getElementById('cnn_image').style.opacity = "0";
+                                 }
+                                 cnn_stop()
+                              </script>
+                           </td>
+                           <td style="padding:20px;width:75%;vertical-align:middle">
+                              <a href="https://github.com/gsg213/Machine_Learning">
+                                 <papertitle>Convolutional Nerual Network Models</papertitle>
+                              </a>
+                              <br>
+                              <strong>Gustavo A. Salazar-Gomez</strong>                
+                              <br>
+                              <a href="https://github.com/gsg213/Computer_Vision_DL/tree/master/CNN">code</a>
+                              <p></p>
+                              <p>Convolutional Neural Network Models LeNet5 and VGG16 with Tensorflow for MNIST dataset, trained with GPU on Colab.</p>
+                           </td>
+                        </tr>                        
                         <tr onmouseout="mln_stop()" onmouseover="mln_start()">
                            <td style="padding:20px;width:25%;vertical-align:middle">
                               <div class="one">
