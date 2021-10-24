@@ -341,6 +341,37 @@
                               <p>Machine Learning projects from Supervised methods like KNN, Decision Trees and ANN, and Unsupervised methods like DBSCAN and PCA, finally feature engineering to improve models performance.</p>
                            </td>
                         </tr>
+                        <tr onmouseout="gan_stop()" onmouseover="gan_start()">
+                           <td style="padding:20px;width:25%;vertical-align:middle">
+                              <div class="one">
+                                 <div class="two" id='gan_image'>
+                                    <img src='images/gan.gif' width="160">
+                                 </div>
+                                 <img src='images/gan_img.png' width="160">
+                              </div>
+                              <script type="text/javascript">
+                                 function gan_start() {
+                                   document.getElementById('gan_image').style.opacity = "1";
+                                 }
+                                 
+                                 function gan_stop() {
+                                   document.getElementById('gan_image').style.opacity = "0";
+                                 }
+                                 gan_stop()
+                              </script>
+                           </td>
+                           <td style="padding:20px;width:75%;vertical-align:middle">
+                              <a href="https://github.com/gsg213/Computer_Vision_DL/tree/master/GAN">
+                                 <papertitle>Generative Adversarial Networks</papertitle>
+                              </a>
+                              <br>
+                              <strong>Gustavo A. Salazar-Gomez</strong>                
+                              <br>
+                              <a href="https://github.com/gsg213/Computer_Vision_DL/tree/master/GAN">code</a>
+                              <p></p>
+                              <p>Generative Adversarial Networks used to generate cars images from CIFAR10, trained with GPU on Colab.</p>
+                           </td>
+                        </tr>                        
                         <tr onmouseout="lbp_stop()" onmouseover="lbp_start()">
                            <td style="padding:20px;width:25%;vertical-align:middle">
                               <div class="one">
