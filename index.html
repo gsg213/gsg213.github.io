@@ -106,23 +106,58 @@
                      <tbody>
                         <td style="padding:20px;width:25%;vertical-align:middle">
                            <heading>Publications</heading>
+                           <tr onmouseout="tlc_stop()" onmouseover="tlc_start()">
+                           <td style="padding:20px;width:25%;vertical-align:middle">
+                              <div class="one">
+                                 <div class="two" id='tlc_image'>
+                                    <img src='images/tlcfuse_image.png' width="160">
+                                 </div>
+                                 <img src='images/tlcfuse_image.png' width="160">
+                              </div>
+                              <script type="text/javascript">
+                                 function tlc_start() {
+                                   document.getElementById('tlc_image').style.opacity = "1";
+                                 }
+                                 
+                                 function tlc_stop() {
+                                   document.getElementById('tlc_image').style.opacity = "0";
+                                 }
+                                 tlc_stop()
+                              </script>
+                           </td>
+                           <td style="padding:20px;width:75%;vertical-align:middle">
+                              <a href="https://ieeexplore.ieee.org/abstract/document/10588460">
+                                 <papertitle>TLCFuse: Temporal Multi-Modality Fusion Towards Occlusion-Aware Semantic Segmentation</papertitle>
+                              </a>
+                              <br>
+                              <strong>Gustavo A. Salazar-Gomez</strong>,
+                              Wenqian Liu,
+                              Manuel Diaz-Zapata,
+                              David Sierra-Gonzalez,
+                              Christian Laugier
+                              <br>
+                              <a href="https://ieeexplore.ieee.org/abstract/document/10588460">Paper</a> 
+                              <p></p>
+                              <p> In this paper, we emphasize the crucial role of temporal cues in reinforcing resilience against occlusions in the bird’s eye view (BEV) semantic grid segmentation task. We proposed a novel architecture that enables the processing of temporal multi-step inputs, where the input at each time step comprises the spatial information encoded from fusing LiDAR and camera sensor readings.</p>
+                           </td>
+                        </tr>                           
                            <tr onmouseout="tfg_stop()" onmouseover="tfg_start()">
                            <td style="padding:20px;width:25%;vertical-align:middle">
                               <div class="one">
-                                 <div class="two" id='dtl_image'>
-                                    <img src='images/image_fuente.png' width="160">
+                                 <div class="two" id='tfg_image'>
+                                    <img src='images/tfg_image.png' width="160">
                                  </div>
-                                 <img src='images/image_plc.png' width="160">
+                                 <img src='images/tfg_image.png' width="160">
                               </div>
                               <script type="text/javascript">
                                  function tfg_start() {
-                                   document.getElementById('dtl_image').style.opacity = "1";
+                                   document.getElementById('tfg_image').style.opacity = "1";
                                  }
                                  
                                  function tfg_stop() {
-                                   document.getElementById('dtl_image').style.opacity = "0";
+                                   document.getElementById('tfg_image').style.opacity = "0";
                                  }
-                                 dtl_stop()
+                                 tfg_stop()
                               </script>
                            </td>
                            <td style="padding:20px;width:75%;vertical-align:middle">
@@ -138,6 +173,7 @@
                               Ozgur Erkent,                             
                               Christian Laugier
                               <br>
+                              <a href="https://github.com/gsg213/TFGrid">Code</a> /
                               <a href="https://ieeexplore.ieee.org/abstract/document/10004276">Paper</a> 
                               <p></p>
                               <p> In this work, we presented an approach for semantic grid prediction that uses a transformer architecture to fuse Lidar sensor data with RGB images from multiple cameras to predict semantic grids of the ego vehicle's environment. </p>
